@@ -86,9 +86,9 @@ const getPost = async () => {
                 <div class="card mx-2" style="width: 12rem;">
                 <button type="button" class="" data-bs-toggle="modal" data-bs-target="#modal${animales.length - 1}">
                   <img src="${imagenSeleccion}" class="card-img-top" alt="..."></button>
-                  <button  id="btnAudio${animales.length - 1}" onclick="playSonido(${animales[animales.length - 1].sonido})"><div class="card-body">
+                  <button  id="btnAudio${animales.length - 1}" onclick="playSonido('${animales[animales.length - 1].sonido}')"><div class="card-body">
                   <p class="card-text"><i class="fa-solid fa-volume-high"></i></p>
-                  <audio id="player${animales.length - 1}" src="${animales[animales.length - 1].sonido}" class="d-none" preload="auto"></audio>
+                  
                   </div></button>
               </div>
               <div class="modal fade" id="modal${animales.length - 1}">
@@ -110,7 +110,7 @@ const getPost = async () => {
 })();
 
 function playSonido(urlSonido) {
-    console.log(urlSonido)
+
     const audio = document.getElementById(`player`);
     audio.src = urlSonido
     audio.play()
@@ -119,7 +119,7 @@ window.playSonido = playSonido
 
 
 
-
+{/* <audio id="player${animales.length - 1}" src="${animales[animales.length - 1].sonido}" class="d-none" preload="auto"></audio> */ }
 
 
 // let urlSonido = `${animales[animales.length - 1].sonido}`
