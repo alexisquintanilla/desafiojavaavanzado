@@ -115,34 +115,5 @@ function playSonido(urlSonido) {
     audio.src = urlSonido
     audio.play()
 }
-window.playSonido = playSonido
+window.playSonido = playSonido;
 
-
-
-{/* <audio id="player${animales.length - 1}" src="${animales[animales.length - 1].sonido}" class="d-none" preload="auto"></audio> */ }
-
-
-// let urlSonido = `${animales[animales.length - 1].sonido}`
-// let btn = document.querySelector(`#btnAudio${animales.length - 1}`)
-
-// const idPlayer = `${animales.length - 1}`
-// btn.addEventListener("click", () => {
-//     console.log(idPlayer, urlSonido)
-//     reproducirSonido(idPlayer, urlSonido)
-
-// })
-// let audio = ""
-// function reproducirSonido(idPlayer, urlSonido) {
-//     audio = document.getElementById(`player${idPlayer}`);
-//     console.log(audio)
-//     audio.src = urlSonido
-//     audio.play()
-// }
-
-// let audio = ""
-// function reproducirSonido(idPlayer, urlSonido) {
-//     audio = document.getElementById(`player${idPlayer}`);
-//     console.log(audio)
-//     audio.src = urlSonido
-//     audio.play()
-// }
